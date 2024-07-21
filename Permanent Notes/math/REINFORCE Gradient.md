@@ -1,6 +1,0 @@
----
-tags:
-  - Derivative
-  - AD
----
-

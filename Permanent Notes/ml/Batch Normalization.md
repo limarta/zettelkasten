@@ -40,7 +40,7 @@ $$\sigma_\mathcal{B}^2\leftarrow\frac{1}{m}\sum_{i=1}^m (x_i-\mu_\mathcal{B})^2$
 $$\hat{x}_i\leftarrow \frac{x_i-\mu_\mathcal{B}}{\sqrt{\sigma_\mathcal{B}^2+\epsilon}}$$
 $$y_i\leftarrow \gamma \hat x_i + \beta\equiv \text{BN}_{\gamma,\beta}(x_i)$$
 >[!danger]
->Q: Why don't we use the unbiased estimator for the variance?
+>Q: Why don't we use the unbiased estimator for the variance? See [[Bessel's Correction]]. 
 
 >[!note] 
 >Batch normalization doesn't just depend on $x_i$. It depends on $x_i$ *and* the other examples in the training batch.

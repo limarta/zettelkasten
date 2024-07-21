@@ -15,7 +15,7 @@ $$E_p\left[\log q(x)\right]\leq E_p\left[\log p(x)\right]$$
 We would like to get $\int p(x)\cdot\frac{q(x)}{p(x)}dx=\int q(x)dx =1$. Shape the term in the expectation to achieve this.
 
 > [!note]- Proof
-> By [[Jensen's inequality]], $E_p\left[\log q(x)/p(x)\right]\leq \log E_p\left[q(x)/p(x)\right]=\log 1 =0$. Rearranging the terms yields Gibb's inequality.
+> By [[Jensen's Inequality]], $E_p\left[\log q(x)/p(x)\right]\leq \log E_p\left[q(x)/p(x)\right]=\log 1 =0$. Rearranging the terms yields Gibb's inequality.
 
 Negative the inequality gives the statement on entropy:
 $$H(p)\leq C(p,q)$$
