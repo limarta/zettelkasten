@@ -1,6 +1,6 @@
 ---
 tags:
-  - Bayesian
+  - bayesian
   - ML
 ---
 The ELBO comes from estimating the [[Estimating Log-Evidence||evidence]]. It can be derived by

@@ -1,6 +1,6 @@
 ---
 tags:
-  - Bayesian
+  - bayesian
   - ML
 ---
 **Goal**: Estimate $\log p(y)$ where $y$ is the "evidence" or set of observations. 

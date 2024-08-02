@@ -108,5 +108,7 @@ $$
 \beta_k&\sim Beta(1,\alpha)\quad&\theta_k^*&\sim H\\
 \pi_k&=\beta_k\prod\limits_{i=1}^{k-1}(1-\beta_i)\quad &G&=\sum\limits_{k=1}^\infty \pi_k \delta_{\theta_k^*}
 \end{align*}$$
+The $\pi_k$ can be viewed as parts of a unit stick. $\pi_1=\beta_1$ is the first piece, $\pi_2=\beta_2(1-\beta_1)$ is the second piece, etc.
+# Applications
 
-
+- A Dirichlet Process can be used for *cluster modeling*. In simple models, the number of clusters is fixed, but a DP allows for an unknown number of clusters. See here for more [[Non-Parametric Cluster Modeling|examples of non-parametric modeling]]. 
