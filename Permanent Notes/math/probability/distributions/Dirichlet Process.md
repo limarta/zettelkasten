@@ -63,7 +63,7 @@ P(\theta_{n+1}\in A|\theta_1,\ldots, \theta_{n})&=\int P(\theta_{n+1}\in A, |G,\
 	&=\frac{\alpha}{\alpha +n}H(A)+\frac{n}{\alpha+n}\#n
 \end{align*}$$
 Thus the predictive distribution is
-$$\theta_{n+1}|\theta_1,\ldots,\theta_{n}\sim \frac{\alpha}{\alpha+n}H(A)+\frac{1}{\alpha+n}\sum_i \delta_{\theta_i}$$
+$$\theta_{n+1}|\theta_1,\ldots,\theta_{n}\sim \frac{\alpha}{\alpha+n}H+\frac{1}{\alpha+n}\sum_i \delta_{\theta_i}$$
 The predictive distribution of $\theta_{n+1}$ is the **same** as the posterior base distribution. Thus 
 $$\theta_n|\theta_1,\ldots, \theta_{n-1}\sim \begin{cases}
 	X_i&\text{w.p.}\;\frac{1}{n-1+\alpha }\\

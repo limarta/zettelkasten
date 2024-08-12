@@ -39,6 +39,11 @@ $h\in L^1(\mathbb{S},\mathcal{F},\mu)$ if and only if $fh\in L^(\mathbb{S},\math
 >[!Proof]
 >Something here.
 
+>[!Example] Density Functions
+>Let $f$ be a integrable Lebesgue function such that $\int f(x)\;\mathrm{d}x=1$. Then $\mathcal{L}=f\lambda$ defines a probability measure (observe $(f\lambda)(\Omega)=\int_\Omega f\;\mathrm{d}x=1$). 
+>
+>Define $F(\alpha)=\mathcal{L}((-\infty, \alpha])$. $F$ is a distribution function for some random variable $X$, and in particular $X$'s distribution function can be expressed as
+>$$F_X(\alpha)=\int\limits_{-\infty}^\alpha f(x)\;\mathrm{d}x$$
 ## Restricted Measure
 
 Let $D\in \mathcal{F}$. Then $\mathcal{F}_D=\{A\in\mathcal{F}:A\subset D\}$ is a $\sigma$-algebra *over* $D$. We denote $\mu_D$ as the *restriction of* $\mu$ to $(D,\mathcal{F}_D)$. Using Fact 1, we can express integrals with respect to $\mu_D$ in terms of the original measure $\mu$.
@@ -46,3 +51,4 @@ Let $D\in \mathcal{F}$. Then $\mathcal{F}_D=\{A\in\mathcal{F}:A\subset D\}$ is a
 If $f$ is a function defined on $\mathbb{S}$, then $f{\bf{1}}_{D}$ is the restriction to $D$. Observe $\mu(f{\bf{1}}_D)=\mu_D(f_D)$. Using the notation from above, this is
 $$(I_D\mu)(h)=\mu_D(h_D)$$
 The expression $\mu(f1_D)$ is a fancy way of denoting $\int_D f\;\mathrm{d}\mu$. We can also denote it as $\mu(f;D)$.
+

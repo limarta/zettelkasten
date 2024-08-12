@@ -22,3 +22,16 @@ If $F$ is non-decreasing and right continuous, there is a unique measure $\mu$ t
 
 >[!question]
 >Take a real-valued R.V. Since two distributions that have the same distribution function also have the same measure, is it possible to have two different random variables with the same induced measure or distribution function? Yes. Amir Dembo points to a different Skorokhod's representation.
+
+## Examples
+
+>[!Example] Example 1
+>Let $\mu$ be a measure on $(\mathbb{R},\mathcal{B})$. Define the *support* $\mathcal{S}$ of $\mu$ to be the set of $x$ such that $\mu(O)>0$ for every open neighborhood $O$ of $x$. Then the support is closed.
+>
+>To see this, consider $x\notin \mathcal{S}$. Then there exists some open neighborhood $U_x$ of $x$ such that $\mu(U_x)=0$. Moreover for every $y\in U_x$, there is a neighborhood $V\subset U$ such that $\mu(V)=0$ which implies $U_x\cap \mathcal{S}=\varnothing$. Now the set $U=\bigcup_x U_x$ is open and is exactly $\mathcal{S}^c$.
+
+
+>[!Example] Example 2
+>It is always possible to construct a measure whose support is some closed set $C\subset\mathbb{R}$. Define a discrete measure on $\mathbb{Q}\cap C$ (more generally on a countable dense set) where $\mu(q)>0$ for $q\in\mathbb{Q}$. Then for every $x\in C$, every neighborhood must intersect some collection of rationals.
+>
+>The same can be shown for $C\subset \mathbb{R}^d$.

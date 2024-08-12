@@ -22,7 +22,7 @@ Let $E\subset\mathbb{R}^d$ be bounded. Then the following are equivalent.
 2) For every $\epsilon>0$, there exists elementary sets $A\subset E\subset B$ such that $m(B\backslash A)\leq \epsilon$.
 3) For every $\epsilon$, there exists an elementary set $A$ such that $m^*_J(A\Delta E)\leq \epsilon$.
 
-$>[!proof] 
+>[!Proof]-
 >$(1)\implies(2)$
 >If $E$ is Jordan measurable, then there exists sets $A$ and $B$ such that $m(E)\lt m(A)+\frac{\epsilon}{2}$ and $m(E)\gt m(B)-\frac{\epsilon}{2}$. Combining, we see that $m(B)- m(A)\lt\epsilon$. By countable additivity $m(B)-m(A)=m(B\backslash A)$. 
 >
@@ -37,15 +37,11 @@ $>[!proof]
 >$$m^*_J(E)-m_{*J}(E)<m(B'')-m(A'')+\frac{\epsilon}{2}=m(B''\backslash A'')+\frac{\epsilon}{2}<\epsilon$$
 >This implies the reverse inequality $m^*_J(E)\leq m_{*J}(E)$.
 
-
-
-
-
-
 **Fact 2**
 If $E$ and $F$ are measurable.
 (1) $E\cup F$, $E\cap F$, $E\backslash F$, and $E\Delta F$ are measurable.
 (2) For any $x\in\mathbb{R}^d$, $E+x$ is Jordan measurable and $m(E+x)=m(E)$.
+
 >[!Proof]
 >(1a)
 >(1b) To prove intersection, we can choose an enclosing set $B\subset E\cap F$ that satisfies
@@ -89,7 +85,7 @@ Let $E\subset \mathbb{R}^d$ be a bounded set. Then
 >Note: Since an elementary set is a finite union of closed boxes, it is closed.
 >
 >(1) For any elementary set $B\supset E$, the closure $\bar{E}$ is contained in $B$. Hence $m^*_J(E)\leq m^*_J(\bar{E})$. To show the reverse inequality, for some $B$
->$$m(E)>m(B)-\epsilon\geq \inf\limits_{\bar{E}\subset D} m(D)-\epsilon$$
+>$$m^*_J(E)>m(B)-\epsilon\geq \inf\limits_{\bar{E}\subset D} m(D)-\epsilon$$
 >since $\bar{E}$ is the intersection of all closed sets, including $B$. Thus $m^*_J(E)>m(\bar{E})-\epsilon$ for arbitrary $\epsilon>0$ or $m^*_J(E)\geq m^*_J(\bar{E})$.
 >
 >(2) The interior of $E$, $E^\circ$,  is the set of points which have a neighborhood in $E$. This is equivalent to the union of all open sets enclosed in $E$.  Like (1), we can run the same argument except use open elementary sets $A\subset E$ and switch to the Jordan *inner* measure.

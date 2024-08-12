@@ -10,8 +10,8 @@ Note this is different from the *[[Random Variable|distribution of X]]* (or *law
 1) $F$ is non-decreasing.
 2) $\lim_{x\rightarrow\infty} F(x)=1$, then $\lim_{x\rightarrow-\infty}F(x)=0$.
 3) $F$ is right continuous.
-4) If $F(x-)=\lim_{y\uparrow x}$, then $F(x-)=P(X<x)$.
-5) $P(X=x) = F(x)-F(x-)$.
+4) If $F(x^-)=\lim_{y\uparrow x}$, then $F(x^-)=P(X<x)$.
+5) $P(X=x) = F(x)-F(x^-)$.
 
 >[!Proof]-
 >1) Comes directly from monotonicity of the measure.
